@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .drop-item {
+        color: red;
+      }
+
+      .menu-items {
+        padding: 16px;
+        background-color: gray;
+        width: fit-content;
+      }
+      .item {
+        list-style-type: none;
+      }
+      .tercero {
+        position: relative;
+      }
+
+      .menu-items {
+        position: absolute;
+        top: 0;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <a class="drop-item">Dropdown</a>
+      <a class="drop-item">Dropdown</a>
+      <div class="tercero">
+        <a class="drop-item">Dropdown</a>
+
+        <ul class="menu-items">
+          <li class="item">Home</li>
+          <li class="item">Contact us</li>
+          <li class="item">About us</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
